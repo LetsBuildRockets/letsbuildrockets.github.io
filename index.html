@@ -10,11 +10,41 @@
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    
+  
     <title>Let's  Build Rockets!</title>
+
+    <style>
+            /* Responsive iFrame */
+ 
+        .responsive-iframe-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+ 
+        .responsive-iframe-container iframe,   
+        .responsive-iframe-container object,  
+        .responsive-iframe-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
   </head>
 
   <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=821561277961222";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     <!-- NAV -->
     <nav class="navbar navbar-default">
       <div class="container-fluid">
@@ -50,11 +80,18 @@
       </div><!-- /.container-fluid -->
     </nav>
     <!-- MAIN CONTENT -->
-    
-    <iframe src="https://www.google.com/calendar/embed?src=vebitsbuc6tnr19atrgkhlpkv8%40group.calendar.google.com&ctz=America/New_York" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
-    
+    <div >
+        <iframe src="https://www.google.com/calendar/embed?src=vebitsbuc6tnr19atrgkhlpkv8%40group.calendar.google.com&ctz=America/New_York" style="border: 0" width="50%" height="600" frameborder="0" scrolling="no"></iframe>
+        <div class="fb-page" data-href="https://www.facebook.com/letsbuildrockets" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+            <div class="fb-xfbml-parse-ignore">
+                <blockquote cite="https://www.facebook.com/letsbuildrockets">
+                    <a href="https://www.facebook.com/letsbuildrockets">Let&#039;s Build Rockets</a>
+                </blockquote>
+            </div>
+        </div>
+        
+    </div>
     <p> This website is currently under <b>heavy</b> construction and content will come back soon!</p>
-    
 
     <!-- FOOTER  -->
     <p>&copy; 2015 Let's Build Rockets</p>
