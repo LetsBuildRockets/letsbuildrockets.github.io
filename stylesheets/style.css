@@ -24,3 +24,7 @@ p {
   margin: 5px;
   height: 220px;
 }
+
+.youtubevideo {
+  frameborder: 0;
+}
