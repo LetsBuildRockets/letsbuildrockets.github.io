@@ -1,0 +1,23 @@
+timezone: America/New_York
+
+excerpt_separator: <!--more-->
+
+# own settings
+name: letsbuildrockets.org
+description: Let's Build Rockets
+copyright: 2016
+author:
+    name: Giselle Koo
+    github_link: https://github.com/gisellegk
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
