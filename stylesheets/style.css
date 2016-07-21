@@ -28,3 +28,47 @@ p {
 .youtubevideo {
   frameborder: 0;
 }
+
+#utilityVoltageDividerContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#utilityVoltageDividerContainer .sch_svg {
+  margin: 10px;
+}
+
+
+#utilityVoltageDividerContainer form {
+    margin: 10px;
+}
+
+
+#utilityVoltageDividerContainer form {
+    width: 500px;
+    margin: 20px auto;
+}
+
+#utilityVoltageDividerContainer form input {
+  display: inline-block;
+}
+
+#utilityVoltageDividerContainer form label {
+  width: 180px;
+  display: inline-block;  
+  text-align: right;
+}
+
+#utilityVoltageDividerContainer label + input {
+  width: 50%;
+  margin: 4px 10px 4px 1px;
+}
+
+#utilityVoltageDividerContainer input + input {
+    float: right;
+}
+
+#utilityVoltageDividerContainer input[type="submit"] {
+  align: right;
+}
+
