@@ -50,54 +50,48 @@
               </ul>
             <li><a href="/Tests.html">Tests</a></li>
             <li><a href="/Publicity.html">Publicity</a></li>
-            <li class="active"><a href="/AboutUs.html">About Us</a></li>
+            <li><a href="/AboutUs.html">About Us</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
     <!-- MAIN CONTENT -->
     
-    <h1>Voltage Divider</h1>
-    <p>From <a href="wikipedia.org/wiki/Voltage_divider">Wikipedia</a>:</p>
-    <blockquote cite="wikipedia.org/wiki/Voltage_divider">
-    <p>In <a title="Electronics" href="https://en.wikipedia.org/wiki/Electronics">electronics</a>, a <strong>voltage divider</strong> (also known as a <strong>potential divider</strong>) is a <a class="mw-redirect" title="Passive circuit" href="https://en.wikipedia.org/wiki/Passive_circuit">passive</a> <a title="Linear circuit" href="https://en.wikipedia.org/wiki/Linear_circuit">linear circuit</a> that produces an output<a title="Voltage" href="https://en.wikipedia.org/wiki/Voltage">voltage</a> (<em>V</em><sub>out</sub>) that is a fraction of its input voltage (<em>V</em><sub>in</sub>). <strong>Voltage division</strong> is the result of distributing the input voltage among the components of the divider. A simple example of a voltage divider is two <a title="Resistor" href="https://en.wikipedia.org/wiki/Resistor">resistors</a> connected in <a title="Series and parallel circuits" href="https://en.wikipedia.org/wiki/Series_and_parallel_circuits">series</a>, with the input voltage applied across the resistor pair and the output voltage emerging from the connection between them.</p>
+    <h1><abbr title="Resistor-Capacitor">RC</abbr> Low-Pass Filter</h1>
+    
+    <p>From <a href="http://wikipedia.org/wiki/Low-pass_filter">Wikipedia</a>:</p>
+    <blockquote cite="http://wikipedia.org/wiki/Low-pass_filter">
+    <p>A <strong>low-pass filter</strong> is a <a title="Filter (signal processing)" href="https://en.wikipedia.org/wiki/Filter_(signal_processing)">filter</a> that passes <a title="Signal (electrical engineering)" href="https://en.wikipedia.org/wiki/Signal_(electrical_engineering)">signals</a> with a <a title="Frequency" href="https://en.wikipedia.org/wiki/Frequency">frequency</a> lower than a certain <a title="Cutoff frequency" href="https://en.wikipedia.org/wiki/Cutoff_frequency">cutoff frequency</a> and <a class="mw-redirect" title="Attenuate" href="https://en.wikipedia.org/wiki/Attenuate">attenuates</a> signals with frequencies higher than the cutoff frequency. The amount of <a title="Attenuation" href="https://en.wikipedia.org/wiki/Attenuation">attenuation</a> for each frequency depends on the filter design. The filter is sometimes called a <strong>high-cut filter</strong>, or <strong>treble cut filter</strong> in audio applications.</p>
     </blockquote>
     
-    <p>$$V_{out}=\frac{R_2}{R_1+R_2} \cdot {V_{in}}$$ $$I_{waste}=\frac{V_{in}}{R_1+R_2}$$ $$P_{1_{noload}}={R_1} \cdot {I_{waste}}^{2}$$ $$P_{2_{noload}}={R_2} \cdot {I_{waste}}^{2}$$</p>
-    <br/>
+    <p>The calculator below allows for in input of the input voltage and the two resistor values. It will calculate and the output voltage, wasted current and the resistor power dissipation under no load.</p>  
     
-    <div id="utilityVoltageDividerContainer">
-    <div class="sch_svg">
-      <object type="image/svg+xml" data="voltage_divider.svg" height="250px">
-        Your browser does not support SVG
-      </object>
-    </div>
-    <div>
-      <form action="javascript:voltageDivider()">
-        <label for="vin">V in (V):</label>
-        <input type="text" onkeypress="return isNumberKey(this, event.charCode);" onkeyup="voltageDivider()" id="vin" autocomplete="off">
-        <br>
-        <label for="r1">R1 (Ω):</label>
-        <input type="text" onkeypress="return isNumberKey(this, event.charCode);" onkeyup="voltageDivider()" id="r1" autocomplete="off">
-        <br>
-        <label for="r2">R2 (Ω):</label>
-        <input type="text" onkeypress="return isNumberKey(this, event.charCode);" onkeyup="voltageDivider()" id="r2" autocomplete="off">
-        <br>
-        <label for="vout">V out (V):</label>
-        <input type="text" id="vout" disabled>
-        <br>
-        <label for="iw">Wasted Current (mA):</label>
-        <input type="text" id="iw" disabled>
-        <br>
-        <label for="p1">R1 Dissipation (mW):</label>
-        <input type="text" id="p1" disabled>
-        <br>
-        <label for="p2">R2 Dissipation (mW):</label>
-        <input type="text" id="p2" disabled>
-        <br>
-        <input type="submit" class="submit-hidden">
-      </form>
-    </div>
+    <div id="utilityRCLowPassFilterContainer">
+      <div class="sch_svg">
+        <object type="image/svg+xml" data="RC_Low_Pass_Filter.svg" height="250px">
+          Your browser does not support SVG
+        </object>
+      </div>
+      <div>
+        <form action="javascript:RCLowPassFilter()">
+          <label for="r1">R1 (Ω):</label>
+          <input name="input" type="text" onkeypress="return isNumberKey(this, event.charCode);" onkeyup="RCLowPassFilter(this);" id="r1" autocomplete="off">
+          <br>
+          <label for="c1">C1 (F):</label>
+          <input name="input" type="text" onkeypress="return isNumberKey(this, event.charCode);" onkeyup="RCLowPassFilter(this);" id="c1" autocomplete="off">
+          <br>
+          <label for="fcut">f cutoff (Hz):</label>
+          <input name="input" type="text" onkeypress="return isNumberKey(this, event.charCode);" onkeyup="RCLowPassFilter(this);" id="fcut" autocomplete="off" disabled>
+          <br>
+          <label for="solvefor">Solve For:</label>
+          <select name="solvefor" id="solvefor" onchange="solveforchange(this.value)">
+          <option value="r1">R1</option>
+          <option value="c1">C1</option>
+          <option value="fcut" selected>Frequency Cutoff</option>
+          </select>
+          <input type="submit" class="submit-hidden">
+        </form>
+      </div>
     </div>
     
     <!-- FOOTER  -->

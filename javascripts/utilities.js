@@ -12,6 +12,36 @@ function voltageDivider() {
   document.getElementById("p2").value=(p2*1000).toFixed(3);
 }
 
+function RCLowPassFilter() {
+  if (document.getElementById("solvefor").value == "r1") {
+    var c1 = parseFloat(document.getElementById("c1").value);
+    var fcut = parseFloat(document.getElementById("fcut").value);   
+
+    var r1 = 1/(2*Math.PI*c1*fcut);
+    document.getElementById("r1").value=r1; 
+  } else if (document.getElementById("solvefor").value == "c1") {
+    var r1 = parseFloat(document.getElementById("r1").value);
+    var fcut = parseFloat(document.getElementById("fcut").value); 
+
+    var c1 = 1/(2*Math.PI*r1*fcut);
+    document.getElementById("c1").value=c1; 
+  } else if (document.getElementById("solvefor").value == "fcut"){
+    var r1 = parseFloat(document.getElementById("r1").value);
+    var c1 = parseFloat(document.getElementById("c1").value);
+    
+    var fcut = 1/(2*Math.PI*r1*c1);
+    document.getElementById("fcut").value=fcut; 
+  }
+
+}
+
+function solveforchange(value) {
+  var inputs = document.getElementsByName("input");
+  for (var i = 0; i < inputs.length; i++)
+    inputs[i].removeAttribute("disabled")
+  document.getElementById(value).setAttribute("disabled",true);
+}
+
 function isNumberKey(self, charCode) {
   if (charCode == 46) {
     if (self.value.indexOf('.') === -1) {

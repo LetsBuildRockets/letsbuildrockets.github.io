@@ -20,6 +20,10 @@ p {
   margin-right: 20px;
 }
 
+#donateForm {
+  margin-left: 20px;
+}
+
 .projectimage {
   margin: 5px;
   height: 220px;
@@ -29,20 +33,22 @@ p {
   frameborder: 0;
 }
 
+.submit-hidden {
+  visibility: hidden;
+}
+
+.sch_svg {
+  margin: 10px;
+}
+
 #utilityVoltageDividerContainer {
   display: flex;
   justify-content: center;
 }
 
-#utilityVoltageDividerContainer .sch_svg {
-  margin: 10px;
-}
-
-
 #utilityVoltageDividerContainer form {
     margin: 10px;
 }
-
 
 #utilityVoltageDividerContainer form {
     width: 500px;
@@ -68,10 +74,37 @@ p {
     float: right;
 }
 
-#utilityVoltageDividerContainer input[type="submit"] {
-  align: right;
+
+
+#utilityRCLowPassFilterContainer {
+  display: flex;
+  justify-content: center;
 }
 
-.submit-hidden {
-  visibility: hidden;
+#utilityRCLowPassFilterContainer form {
+    margin: 10px;
+}
+
+#utilityRCLowPassFilterContainer form {
+    width: 500px;
+    margin: 20px auto;
+}
+
+#utilityRCLowPassFilterContainer form input {
+  display: inline-block;
+}
+
+#utilityRCLowPassFilterContainer form label {
+  width: 180px;
+  display: inline-block;  
+  text-align: right;
+}
+
+#utilityRCLowPassFilterContainer label + input {
+  width: 50%;
+  margin: 4px 10px 4px 1px;
+}
+
+#utilityRCLowPassFilterContainer input + input {
+    float: right;
 }
