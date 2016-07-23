@@ -9,11 +9,11 @@
     <!-- include bootstrap stuff -->
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     
     <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
-    <script src="javascripts/utilities.js"></script>
+    <script src="/javascripts/utilities.js"></script>
     
     <title>Let's  Build Rockets! - Utilites </title>
     
@@ -64,23 +64,23 @@
     
     <div id="utilityVoltageDividerContainer">
     <div class="sch_svg">
-      <object type="image/svg+xml" data="utilities/voltage_divider.svg" height="250px">
+      <object type="image/svg+xml" data="voltage_divider.svg" height="250px">
         Your browser does not support SVG
       </object>
     </div>
     <div>
       <form action="javascript:voltageDivider()">
         <label for="vin">V in (V):</label>
-        <input type="text" onkeypress="return isFloatChar(event.charCode)" id="vin">
+        <input type="text" onkeypress="return isNumberKey(this, event.charCode);" onkeyup="voltageDivider()" id="vin" autocomplete="off">
         <br>
         <label for="r1">R1 (Ω):</label>
-        <input type="text" onkeypress="return isFloatChar(event.charCode)" id="r1">
+        <input type="text" onkeypress="return isNumberKey(this, event.charCode);" onkeyup="voltageDivider()" id="r1" autocomplete="off">
         <br>
         <label for="r2">R2 (Ω):</label>
-        <input type="text" onkeypress="return isFloatChar(event.charCode)" id="r2">
+        <input type="text" onkeypress="return isNumberKey(this, event.charCode);" onkeyup="voltageDivider()" id="r2" autocomplete="off">
         <br>
         <label for="vout">V out (V):</label>
-        <input type="text" onkeypress="return isFloatChar(event.charCode)" id="vout" disabled>
+        <input type="text" id="vout" disabled>
         <br>
         <label for="iw">Wasted Current (mA):</label>
         <input type="text" id="iw" disabled>
@@ -91,7 +91,7 @@
         <label for="p2">R2 Dissipation (mW):</label>
         <input type="text" id="p2" disabled>
         <br>
-        <input type="submit" hidden="true">
+        <input type="submit" class="submit-hidden">
       </form>
     </div>
     </div>

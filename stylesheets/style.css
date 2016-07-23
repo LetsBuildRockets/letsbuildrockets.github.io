@@ -72,3 +72,6 @@ p {
   align: right;
 }
 
+.submit-hidden {
+  visibility: hidden;
+}

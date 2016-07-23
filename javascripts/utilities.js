@@ -6,13 +6,22 @@ function voltageDivider() {
   var iw = vin / (r1+r2);
   var p1 = r1*iw*iw;
   var p2 = r2*iw*iw;
-  document.getElementById("vout").value=vout;
-  document.getElementById("iw").value=iw*1000;
-  document.getElementById("p1").value=p1*1000;
-  document.getElementById("p2").value=p2*1000;
+  document.getElementById("vout").value=vout.toFixed(3);
+  document.getElementById("iw").value=(iw*1000).toFixed(3);
+  document.getElementById("p1").value=(p1*1000).toFixed(3);
+  document.getElementById("p2").value=(p2*1000).toFixed(3);
 }
 
-function isFloatChar(character) {
-  voltageDivider();
-  return (character >= 48 && character <= 57) || character == 46 || character == 13;
+function isNumberKey(self, charCode) {
+  if (charCode == 46) {
+    if (self.value.indexOf('.') === -1) {
+      return true;
+    } else {
+      return false;
+    }
+  } else {
+    if (charCode > 31 && (charCode < 48 || charCode > 57))
+      return false;
+  }
+  return true;
 }
