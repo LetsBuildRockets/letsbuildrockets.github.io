@@ -74,6 +74,13 @@
       </div>
       <div>
         <form action="javascript:RCLowPassFilter()">
+          <label for="solvefor">Solve For:</label>
+          <select name="solvefor" id="solvefor" onchange="solveforchange(this.value)">
+          <option value="r1">R1</option>
+          <option value="c1">C1</option>
+          <option value="fcut" selected>Frequency Cutoff</option>
+          </select>
+          <br>
           <label for="r1">R1 (Ω):</label>
           <input name="input" type="text" onkeypress="return isNumberKey(this, event.charCode);" onkeyup="RCLowPassFilter(this);" id="r1" autocomplete="off">
           <br>
@@ -82,13 +89,6 @@
           <br>
           <label for="fcut">f cutoff (Hz):</label>
           <input name="input" type="text" onkeypress="return isNumberKey(this, event.charCode);" onkeyup="RCLowPassFilter(this);" id="fcut" autocomplete="off" disabled>
-          <br>
-          <label for="solvefor">Solve For:</label>
-          <select name="solvefor" id="solvefor" onchange="solveforchange(this.value)">
-          <option value="r1">R1</option>
-          <option value="c1">C1</option>
-          <option value="fcut" selected>Frequency Cutoff</option>
-          </select>
           <input type="submit" class="submit-hidden">
         </form>
       </div>
