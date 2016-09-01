@@ -76,17 +76,25 @@
     </div>
     <div>
       <form action="javascript:voltageDivider()">
+        <label for="solvefor">Solve For:</label>
+        <select name="solvefor" id="solvefor" onchange="solveforchange(this.value)">
+        <option value="vin">V in</option>
+        <option value="r1">R1</option>
+        <option value="r2">R2</option>
+        <option value="vout" selected>V out</option>
+        </select>
+        <br>
         <label for="vin">V in (V):</label>
-        <input type="text" onkeypress="return isNumberKey(this, event.charCode);" onkeyup="voltageDivider()" id="vin" autocomplete="off">
+        <input name="input" type="text" onkeypress="return isNumberKey(this, event.charCode);" onkeyup="voltageDivider()" id="vin" autocomplete="off">
         <br>
         <label for="r1">R1 (Ω):</label>
-        <input type="text" onkeypress="return isNumberKey(this, event.charCode);" onkeyup="voltageDivider()" id="r1" autocomplete="off">
+        <input name="input" type="text" onkeypress="return isNumberKey(this, event.charCode);" onkeyup="voltageDivider()" id="r1" autocomplete="off">
         <br>
         <label for="r2">R2 (Ω):</label>
-        <input type="text" onkeypress="return isNumberKey(this, event.charCode);" onkeyup="voltageDivider()" id="r2" autocomplete="off">
+        <input name="input" type="text" onkeypress="return isNumberKey(this, event.charCode);" onkeyup="voltageDivider()" id="r2" autocomplete="off">
         <br>
         <label for="vout">V out (V):</label>
-        <input type="text" id="vout" disabled>
+        <input name="input" type="text" id="vout" disabled>
         <br>
         <label for="iw">Wasted Current (mA):</label>
         <input type="text" id="iw" disabled>

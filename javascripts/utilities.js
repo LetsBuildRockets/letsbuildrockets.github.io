@@ -1,12 +1,34 @@
 function voltageDivider() {
-  var vin = parseFloat(document.getElementById("vin").value);
-  var r1 = parseFloat(document.getElementById("r1").value);
-  var r2 = parseFloat(document.getElementById("r2").value);
-  var vout = vin * (r2 / (r1+r2));
+  if (document.getElementById("solvefor").value == "vout") {
+    var vin = parseFloat(document.getElementById("vin").value);
+    var r1 = parseFloat(document.getElementById("r1").value);
+    var r2 = parseFloat(document.getElementById("r2").value);
+    var vout = vin * (r2 / (r1 + r2));
+    document.getElementById("vout").value=vout.toFixed(3);
+  } else if (document.getElementById("solvefor").value == "vin") {
+    var vout = parseFloat(document.getElementById("vout").value);
+    var r1 = parseFloat(document.getElementById("r1").value);
+    var r2 = parseFloat(document.getElementById("r2").value);
+    var vin = vout / (r2 / (r1 + r2));
+    document.getElementById("vin").value=vin.toFixed(3);
+  } else if (document.getElementById("solvefor").value == "r1") {
+    var vout = parseFloat(document.getElementById("vout").value);
+    var vin = parseFloat(document.getElementById("vin").value);
+    var r2 = parseFloat(document.getElementById("r2").value);
+    var r1 = (r2 * (vin - vout))/vout;
+    document.getElementById("r1").value=r1.toFixed(3);
+  } else if (document.getElementById("solvefor").value == "r2") {
+    var vout = parseFloat(document.getElementById("vout").value);
+    var vin = parseFloat(document.getElementById("vin").value);
+    var r1 = parseFloat(document.getElementById("r1").value);
+    var r2 =  - (vout * r1) / (vout - vin);
+    document.getElementById("r2").value=r2.toFixed(3);
+  }
+ 
+
   var iw = vin / (r1+r2);
   var p1 = r1*iw*iw;
   var p2 = r2*iw*iw;
-  document.getElementById("vout").value=vout.toFixed(3);
   document.getElementById("iw").value=(iw*1000).toFixed(3);
   document.getElementById("p1").value=(p1*1000).toFixed(3);
   document.getElementById("p2").value=(p2*1000).toFixed(3);
