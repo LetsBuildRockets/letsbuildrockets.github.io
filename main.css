@@ -1,0 +1,355 @@
+html,
+body {
+    padding: 0;
+    margin: 0 auto;
+}
+
+body {
+    
+}
+
+.page-width {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.nav {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 70px;
+}
+
+.nav-bar {
+    width: 1000px;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: #afaeae;
+    font-family: "Roboto Slab";
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: .2s;
+}
+
+.links ul li a:hover {
+    color: #ee4c24;
+}
+
+.links ul li {
+  list-style: none;
+}
+
+.links ul {
+    display: flex;
+}
+
+.logo {
+    background-image: url(assets/logo.png);
+    width: 100px;
+    height: 51px;
+    background-size: 100px 51px;
+    background-repeat: no-repeat;
+}
+
+.hero {
+    background-image: url(assets/eric-hero.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 758px;
+    
+}
+
+.intro {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.videos {
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.eric {
+    background-image: url(assets/eric-maker-faire.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 540px;
+    width: 960px;
+}
+
+h3 {
+    font-family: "Roboto Slab";
+    font-size: 48px;
+    color: #ee4c24;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+}
+
+p {
+    font-family: "Roboto Slab";
+    color: #474747;
+    font-size: 24px;
+    text-align: center;
+}
+
+h4 {
+    font-family: "Roboto Slab";
+    color: #474747;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+li {
+    font-family: "Roboto Slab";
+    color: #474747;
+    font-size: 18px;
+    text-align: left;
+}
+
+.learnmore-button {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 170px;
+    border-radius: 50px;
+    border-style: solid;
+    color: #ee4c24;
+    text-align: center;
+    font-family: "Roboto Slab";
+    transition: .2s;
+}
+
+.learnmore-button a {
+    text-decoration: none;
+    color: #ee4c24;
+    font-size: 24px;
+    transition: .2s;
+    width: 170px;
+}
+
+.learnmore-button:hover {
+    background-color: #ee4c24;
+}
+
+.learnmore-button a:hover {
+    color: #FFF;
+}
+
+.projects {
+    background-color: #ee4c24;
+    color: #FFF;
+    font-family: "Roboto Slab";
+    height: 500px;
+    width: 100%;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+h2 {
+    font-family: "Roboto Slab";
+    font-size: 48px;
+    color: #FFF;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.project-boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.engines {
+    background-image: url(assets/engines.jpg);
+    height: 300px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.plumbing {
+    background-image: url(assets/plumbing.jpg);
+    height: 300px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.viewall-button {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 170px;
+    border-radius: 50px;
+    border-style: solid;
+    color: #FFF;
+    text-align: center;
+    font-family: "Roboto Slab";
+    transition: .2s;
+}
+
+.viewall-button a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 24px;
+    transition: .2s;
+    width: 170px;
+}
+
+.viewall-button:hover {
+    background-color: #FFF;
+}
+
+.viewall-button a:hover {
+    color: #ee4c24;
+}
+
+.content-block p {
+    font-family: "Roboto Slab";
+    color: #474747;
+    font-size: 24px;
+    text-align: left;
+}
+.content-block h3 {
+    font-family: "Roboto Slab";
+    font-size: 48px;
+    color: #ee4c24;
+    font-weight: 700;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.rocketeers {
+    background-color: #f3f3f3;
+    color: #ee4c24;
+    font-family: "Roboto Slab";
+    height: 1000px;
+    width: 100%;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+.rocketeers .page-width img {
+    padding-right: 30px;
+}
+
+.rocketeers h4 {   
+    font-family: "Roboto Slab";
+    color: #474747;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.sponsors {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.sponsor-boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.engine1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 900px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.mark {
+    background-image: url(assets/mark-working.jpg);
+    height: 300px;
+    width: 499px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.engineimage {
+    background-image: url(assets/engine.jpg);
+    height: 300px;
+    width: 273px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hackerspace {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 900px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.making {
+    background-image: url(assets/making.jpg);
+    height: 300px;
+    width: 303px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.working {
+    background-image: url(assets/working.jpg);
+    height: 300px;
+    width: 507px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100px;
+    padding-top: 20px;
+}
+
+h1 {
+    font-family: "Roboto Slab";
+    font-size: 20px;
+    color: #ee4c24;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 200px;
+    padding: 10px;
+}
