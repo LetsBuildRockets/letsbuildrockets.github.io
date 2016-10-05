@@ -248,6 +248,19 @@ h2 {
     padding-top: 30px;
 }
 
+.rocketeers {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    flex-direction: row;
+    align-items: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+    min-width: 320px;
+    max-width: 1220px;
+}
+
 .rocketeers .page-width img {
     padding-right: 30px;
 }
@@ -257,6 +270,13 @@ h2 {
     color: #474747;
     font-size: 18px;
     font-weight: 400;
+}
+
+.rocketeers .rocketeer {
+    display:flex;
+    align-items: center;
+    
+    padding: 20px 0 0 20px;
 }
 
 .sponsors {
