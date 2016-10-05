@@ -255,10 +255,7 @@ h2 {
     flex-direction: row;
     align-items: center;
     align-items: center;
-
     flex-wrap: wrap;
-    min-width: 320px;
-    max-width: 1220px;
 }
 
 .rocketeers .page-width img {
@@ -280,9 +277,7 @@ h2 {
 }
 
 .sponsors {
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10px;
+    padding-top: 100px;
     padding-bottom: 30px;
 }
 
@@ -291,10 +286,17 @@ h2 {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 500px;
-    text-align: center;
+    align: center;
+    align-items: center;
     margin: 0 auto;
     padding-top: 30px;
 }
+.sponsor-boxes img{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    vertical-align:  middle;
+}
+
 
 .engine1 {
     display: flex;
@@ -363,6 +365,11 @@ h1 {
     font-weight: 700;
     text-align: center;
     margin: 0 auto;
+}
+
+h1 a {
+  text-decoration: none !important;
+  color: inherit;
 }
 
 .social-media {
