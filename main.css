@@ -40,7 +40,7 @@ body {
 }
 
 .links ul li a:hover {
-    color: #ee4c24;
+    color: #F9423A;
 }
 
 .links ul li {
@@ -93,7 +93,7 @@ body {
 h3 {
     font-family: "Roboto Slab";
     font-size: 48px;
-    color: #ee4c24;
+    color: #F9423A;
     font-weight: 700;
     text-align: center;
     margin: 0 auto;
@@ -127,7 +127,7 @@ li {
     width: 170px;
     border-radius: 50px;
     border-style: solid;
-    color: #ee4c24;
+    color: #F9423A;
     text-align: center;
     font-family: "Roboto Slab";
     transition: .2s;
@@ -135,14 +135,14 @@ li {
 
 .learnmore-button a {
     text-decoration: none;
-    color: #ee4c24;
+    color: #F9423A;
     font-size: 24px;
     transition: .2s;
     width: 170px;
 }
 
 .learnmore-button:hover {
-    background-color: #ee4c24;
+    background-color: #F9423A;
 }
 
 .learnmore-button a:hover {
@@ -150,7 +150,7 @@ li {
 }
 
 .projects {
-    background-color: #ee4c24;
+    background-color: #F9423A;
     color: #FFF;
     font-family: "Roboto Slab";
     height: 500px;
@@ -220,7 +220,7 @@ h2 {
 }
 
 .viewall-button a:hover {
-    color: #ee4c24;
+    color: #F9423A;
 }
 
 .content-block p {
@@ -232,7 +232,7 @@ h2 {
 .content-block h3 {
     font-family: "Roboto Slab";
     font-size: 48px;
-    color: #ee4c24;
+    color: #F9423A;
     font-weight: 700;
     text-align: left;
     margin: 0 auto;
@@ -240,7 +240,7 @@ h2 {
 
 .rocketeers {
     background-color: #f3f3f3;
-    color: #ee4c24;
+    color: #F9423A;
     font-family: "Roboto Slab";
     height: 1000px;
     width: 100%;
@@ -295,6 +295,17 @@ h2 {
     padding-top: 20px;
     padding-bottom: 20px;
     vertical-align:  middle;
+}
+
+.donation ul {
+  list-style-type: circle;
+}
+
+.donation li.wehaveone:before{
+  position: absolute;
+  margin-left: -1.2em;
+  font-weight: bold;
+  content: "\2713   ";
 }
 
 
@@ -361,7 +372,7 @@ h2 {
 h1 {
     font-family: "Roboto Slab";
     font-size: 20px;
-    color: #ee4c24;
+    color: #F9423A;
     font-weight: 700;
     text-align: center;
     margin: 0 auto;
@@ -370,6 +381,11 @@ h1 {
 h1 a {
   text-decoration: none !important;
   color: inherit;
+}
+
+.paypalbutton input {
+    vertical-align:  middle;
+    margin: 0px 0px 5px 5px;
 }
 
 .social-media {
