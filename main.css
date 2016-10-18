@@ -20,7 +20,7 @@ body {
 }
 
 .nav-bar {
-    width: 1000px;
+    width: 100%;
     height: 70px;
     margin: 0 auto;
     display: flex;
