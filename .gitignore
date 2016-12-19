@@ -1,1 +1,13 @@
 _site/*
+
+*~
+
+#Windows 
+Thumbs.db
+
+#Eclipse project info
+.settings
+.project
+
+#Ruby
+*.lock
