@@ -2,7 +2,7 @@ encoding: utf-8
 defaults: 
 	-
 	scope:
-		path: "" #an empty string here means all the files in the project
+		path: "jekyll-site\"
 	values:
 		layout: "default"
 prose:
