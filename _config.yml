@@ -2,7 +2,7 @@ encoding: utf-8
 defaults: 
 	-
 	scope:
-		path: "jekyll-site\"
+		path: ""
 	values:
 		layout: "default"
 prose:
