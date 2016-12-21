@@ -178,20 +178,11 @@ h2 {
     padding-top: 30px;
 }
 
-.engines {
-    background-image: url(assets/engines.jpg);
+.imgBox {
     height: 300px;
     width: 300px;
     background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.plumbing {
-    background-image: url(assets/plumbing.jpg);
-    height: 300px;
-    width: 300px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    
 }
 
 .viewall-button {

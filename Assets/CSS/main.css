@@ -36,11 +36,28 @@ p {
     text-align: center;
 }
 
+/*Section Wrappers**/
 .whiteSectionWrapper, .orangeSectionWrapper {
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
     padding-bottom: 40px;
+}
+
+/*ImgSectionBoxes**/
+.imgSectionBox{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+width: 700px;
+text-align: center;
+margin: 0 auto;
+padding-top: 30px;
+}
+
+.imgBox {
+    height: 300px;
+    width: 300px;  
 }
 
 /**White Button**/
