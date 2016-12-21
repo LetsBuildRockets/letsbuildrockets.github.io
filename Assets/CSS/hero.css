@@ -1,0 +1,9 @@
+.hero {
+    background-image: url(/Assets/ImportantImages/eric-hero.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 758px;
+    position:relative;
+    z-index:1;
+
+}
