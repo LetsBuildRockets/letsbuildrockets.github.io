@@ -27,14 +27,14 @@ html, body {
 .nav {
   background: rgba(0, 0, 0, 0.6);
   width: 100%;
-  height: 70px;
+  height: 10vh;
   position:absolute;
   z-index:2;
 }
 
 .nav-bar {
   width: 100%;
-  height: 70px;
+  height: 10vh;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -48,8 +48,10 @@ html, body {
   font-family: "Roboto Slab";
   display: block;
   padding-left: 10px;
-  padding-right: 10px;
+  padding-right: 25px;
+  margin-right:15px;
   transition: .2s;
+  font-size:1.2em;
 }
 
 .links ul li a:hover {
@@ -67,9 +69,11 @@ html, body {
 /*Logo**/
 .logo {
   background-image: url(/Assets/ImportantImages/logo.png);
-  width: 110px;
-  height: 56px;
-  background-size: 110px 56px;
+  width: 12vw;
+  height: 10vh;
+  background-size:90%;
+  margin-left: 2%;
+  margin-top: 1%;
   background-repeat: no-repeat;
 }
 
