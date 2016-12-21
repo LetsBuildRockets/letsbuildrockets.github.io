@@ -8,7 +8,101 @@ html, body {
   margin: 0 auto;
 }
 
-/*Header 1**/
+/*Header 2**/
+h2 {
+    font-family: "Roboto Slab";
+    font-size: 48px;
+    color: #FFF;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*Header 3**/
+h3 {
+    font-family: "Roboto Slab";
+    font-size: 48px;
+    color: #F9423A;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*Paragraph**/
+p {
+    font-family: "Roboto Slab";
+    color: #474747;
+    font-size: 24px;
+    text-align: center;
+}
+
+.whiteSectionWrapper, .orangeSectionWrapper {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+/**White Button**/
+.whiteButton {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 170px;
+    border-radius: 50px;
+    border-style: solid;
+    color: #F9423A;
+    text-align: center;
+    font-family: "Roboto Slab";
+    transition: .2s;
+}
+
+.whiteButton a {
+    text-decoration: none;
+    color: #F9423A;
+    font-size: 24px;
+    transition: .2s;
+    width: 170px;
+}
+
+.whiteButton:hover {
+    background-color: #F9423A;
+}
+
+.whiteButton a:hover {
+    color: #FFF;
+}
+
+/*Orange Button**/
+.orangeButton {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 170px;
+    border-radius: 50px;
+    border-style: solid;
+    color: #FFF;
+    text-align: center;
+    font-family: "Roboto Slab";
+    transition: .2s;
+}
+
+.orangeButton a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 24px;
+    transition: .2s;
+    width: 170px;
+}
+
+.orangeButton:hover {
+    background-color: #FFF;
+}
+
+.orangeButton a:hover {
+    color: #F9423A;
+}
+/*Email Header**/
 .email h3{
     font-family: "Roboto Slab";
     font-size: 20px;
@@ -77,6 +171,13 @@ html, body {
   background-repeat: no-repeat;
 }
 
+/*Orange Section Wrapper**/
+.orangeSectionWrapper {
+      background-color: #F9423A;
+      color: #FFF;
+      height: 500px;
+      width: auto;
+  }
 /*Footer**/
 .footer {
   background: rgba(0, 0, 0, 0.6);
