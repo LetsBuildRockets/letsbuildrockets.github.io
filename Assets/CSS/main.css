@@ -3,9 +3,27 @@ html, body {
   margin: 0 auto;
 }
 
+.content{
+  padding-top:11vh;
+}
+
 .page-width {
   width: 1000px;
   margin: 0 auto;
+}
+/**Header `**/
+h1 {
+    font-family: "Roboto Slab";
+    font-size: 48px;
+    color: #F9423A;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1 a {
+  text-decoration: none !important;
+  color: inherit;
 }
 
 /*Header 2**/
@@ -25,7 +43,15 @@ h3 {
     color: #F9423A;
     font-weight: 700;
     text-align: center;
+}
 
+
+/*Header 4**/
+h4 {
+    font-family: "Roboto Slab";
+    color: #474747;
+    font-size: 30px;
+    font-weight: 400;
 }
 
 /*Paragraph**/
@@ -34,6 +60,30 @@ p {
     color: #474747;
     font-size: 24px;
     text-align: center;
+}
+
+.leftAlign > * {
+  text-align:left;
+}
+
+/**List Item*/
+li {
+    font-family: "Roboto Slab";
+    color: #474747;
+    font-size: 18px;
+    text-align: left;
+}
+
+/**Bulleted checklist*/
+ul.Checklist {
+  list-style-type: circle;
+}
+
+ul.Checklist li.checked:before{
+  position: absolute;
+  margin-left: -1.1em;
+  font-weight: bold;
+  content: "\2713   ";
 }
 
 /*Section Wrappers**/

@@ -1,0 +1,30 @@
+.rocketeers {
+    background-color: #f3f3f3;
+    color: #F9423A;
+    font-family: "Roboto Slab";
+    height: 1000px;
+    width: 100%;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.rocketeers img {
+    padding-right: 30px;
+}
+
+.rocketeer p {
+  text-align: left;
+}
+
+
+.rocketeers .rocketeer {
+    display:flex;
+    align-items: center;
+    padding: 20px 0 0 20px;
+}
