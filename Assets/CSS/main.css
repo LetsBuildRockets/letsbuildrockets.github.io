@@ -21,11 +21,11 @@ h2 {
 /*Header 3**/
 h3 {
     font-family: "Roboto Slab";
-    font-size: 48px;
+    font-size:36px;
     color: #F9423A;
     font-weight: 700;
     text-align: center;
-    margin: 0 auto;
+
 }
 
 /*Paragraph**/
@@ -42,7 +42,7 @@ p {
     margin-right: auto;
     padding-top: 30px;
     padding-bottom: 40px;
-}
+    }
 
 /*ImgSectionBoxes**/
 .imgSectionBox{
@@ -57,7 +57,7 @@ padding-top: 30px;
 
 /**White Button**/
 .whiteButton {
-    margin-top: 40px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     width: 170px;
@@ -87,7 +87,7 @@ padding-top: 30px;
 
 /*Orange Button**/
 .orangeButton {
-    margin-top: 40px;
+    margin-top: -70px;
     margin-left: auto;
     margin-right: auto;
     width: 170px;
