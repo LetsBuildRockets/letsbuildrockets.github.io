@@ -1,10 +1,21 @@
 encoding: utf-8
-defaults: 
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+defaults:
   -
     scope:
       path: ""
     values:
       layout: "default"
+  -
+    scope:
+      path: "projects"
+    values:
+      layout:"project"
 prose:
   media: "files"
   siteurl: "http://letsbuildrockets.org"
