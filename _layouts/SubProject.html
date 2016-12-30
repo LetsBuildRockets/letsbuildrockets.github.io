@@ -2,6 +2,7 @@
 <html>
 <head> {%include head.html %}
   <link rel="stylesheet" type="text/css" href="/Assets/CSS/main.css" />
+  <link rel="stylesheet" type="text/css" href="/Assets/CSS/Project.css" />
 </head>
 <body>
 	{%include Navigation.html %}
@@ -9,6 +10,16 @@
 <div class="content">
 	{{content}}
 </div>
+
+{% if site.subprojects.size > 0 %}
+ <ul id="project-container">
+	 {% for project in site.subprojects %}
+        <li class="project">
+          <a class="projectTitle" href="{{ project.url }}">{{ project.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
 
 	{%include Footer.html%}
 </body>
