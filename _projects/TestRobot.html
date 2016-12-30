@@ -1,14 +1,28 @@
 ---
 title: TestRobot
 project: TestRobot
-layout: SubProject
+layout: Project
 published: true
 ---
-Woohoo!
-<div class = "project">
+
+<h3>Subprojects</h3>
+<p>Woohoo!
+I would love to know why this shit isn't working.</p>
+<div class = "subproject">
 <a href="TestRobot">TestBot </a>
 </div>
 
-<div class = "project">
-<a href="V2">V2</a>
+<div class = "subproject">
+<a href="subprojects/V2">V2</a>
+
+{% if site.subprojects.size > 0 %}
+ <ul id="project-container">
+	 {% for project in site.subprojects %}
+        <li class="subproject">
+          <a class="projectTitle" href="{{ project.url }}">{{ project.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
 </div>
