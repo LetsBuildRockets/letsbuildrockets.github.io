@@ -4,7 +4,9 @@ collections:
   projects:
     output: true
     permalink: /_projects/:path/
-
+  subprojects:
+    output: true
+    permalink: /_subprojects/:path/
 defaults:
   -
     scope:
