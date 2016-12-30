@@ -18,6 +18,10 @@ defaults:
       path: "projects"
     values:
       layout:"project"
+  -
+    scope:
+      path:"subprojects"
+      layout:"SubProject"
 prose:
   media: "files"
   siteurl: "http://letsbuildrockets.org"
