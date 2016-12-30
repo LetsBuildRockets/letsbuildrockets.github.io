@@ -32,6 +32,6 @@ li.project:hover{
   height: 100%;
 }
 
-.projectTitle{
+.projectTitle:hover{
   color:#fff;
 }
