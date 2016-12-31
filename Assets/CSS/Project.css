@@ -36,6 +36,13 @@ li.project:hover{
   color:#fff;
 }
 
+#subProjectContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
 li.subProject {
   list-style-type: none;
   overflow: hidden;

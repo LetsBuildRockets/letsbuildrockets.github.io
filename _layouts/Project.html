@@ -12,10 +12,10 @@
 </div>
 
 {% if site.subprojects.size != 0 %}
- <ul id="project-container">
+ <ul id="subProjectContainer">
 	 {% for subproject in site.subprojects %}
-        <li class="project">
-          <a class="projectTitle" href="{{ subprojects.url }}">{{ project.title }}</a>
+        <li class="subProject">
+          <a class="subProjectTitle" href="{{ subprojects.url }}">{{ subProject.title }}</a>
         </li>
       {% endfor %}
     </ul>
