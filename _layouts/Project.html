@@ -11,11 +11,11 @@
 	{{content}}
 </div>
 
-{% if site.subprojects.size > 0 %}
+{% if site.subprojects.size != 0 %}
  <ul id="project-container">
 	 {% for project in site.projects %}
         <li class="project">
-          <a class="projectTitle" href="{{ project.url }}">{{ project.title }}</a>
+          <a class="projectTitle" href="{{ subprojects.url }}">{{ project.title }}</a>
         </li>
       {% endfor %}
     </ul>
