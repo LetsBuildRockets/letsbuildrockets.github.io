@@ -13,7 +13,7 @@
 
 {% if site.subprojects.size != 0 %}
  <ul id="project-container">
-	 {% for project in site.projects %}
+	 {% for subproject in site.subprojects %}
         <li class="project">
           <a class="projectTitle" href="{{ subprojects.url }}">{{ project.title }}</a>
         </li>
