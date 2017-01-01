@@ -13,9 +13,11 @@
 {% if site.subprojects.size != 0 %}
  <ul id="subProjectContainer">
 	 {% for subproject in site.subprojects %}
+    {%if page.project = subproject.project}
         <li class="subProject">
           <a class="subProjectTitle" href="{{ subproject.url }}">{{ subproject.title }}</a>
         </li>
+        {%endif%}
       {% endfor %}
     </ul>
     {% endif %}

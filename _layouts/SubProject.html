@@ -4,25 +4,14 @@
   <link rel="stylesheet" type="text/css" href="{{ site.url }}/Assets/CSS/Project.css" />
 </head>
 <body>
-  {%include navigation.html %}
+	{%include navigation.html %}
 
-  <div class="content">
-    <p>this is a subproject</p>
-    {{content}}
-  </div>
-  {% if site.subprojects.size != 0 %}
-  <ul id="subProjectContainer">
-    {% for subproject in site.subprojects %}
-    {% if page.project = subproject.project}
-    <li class="subProject">
-      <a class="subProjectTitle" href="{{ subproject.url }}">{{ subproject.title }}</a>
-    </li>
-    {%endif%}
-    {% endfor %}
-  </ul>
-  {% endif %}
+<div class="content">
+  <p>this is a subproject</p>
+	{{content}}
+</div>
 
-  {%include footer.html%}
+	{%include footer.html%}
 </body>
 
 </html>
