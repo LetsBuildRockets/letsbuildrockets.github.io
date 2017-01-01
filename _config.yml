@@ -3,10 +3,10 @@ encoding: utf-8
 collections:
   projects:
     output: true
-    permalink: /_projects/:path/
+    permalink: /projects/:path/
   subprojects:
     output: true
-    permalink: /_subprojects/:path/
+    permalink: /subprojects/:path/
 
 defaults:
   -
@@ -16,14 +16,11 @@ defaults:
       layout: "default"
   -
     scope:
-      path: "projects"
+      type: "projects"
     values:
-      layout: "project"
+      layout: "Project"
   -
     scope:
-      path: "subprojects"
+      type: "subprojects"
     values:
-      layout: "subproject"
-prose:
-  media: "files"
-  siteurl: "http://letsbuildrockets.org"
+      layout: "SubProject"
