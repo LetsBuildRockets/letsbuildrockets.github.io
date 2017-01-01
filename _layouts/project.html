@@ -2,10 +2,12 @@
 <html>
 <head> {%include head.html %}
   <link rel="stylesheet" type="text/css" href="{{ site.url }}/Assets/CSS/Project.css" />
+  <link rel="stylesheet" type="text/css" href="{{ site.url }}/Assets/CSS/splashImages   .css" />
 </head>
 <body>
 	{%include navigation.html %}
-
+  <div class ="projectImgSplash">
+	</div>
 <div class="content">
 	{{content}}
 </div>
@@ -21,6 +23,12 @@
       {%endfor%}
     </ul>
     {% endif %}
+
+<div class = "page-width">
+    <script>
+        document.write('<a href="' + document.referrer + '"> << Go Back</a>');
+    </script>
+</div>
 
 	{%include footer.html%}
 </body>
