@@ -7,7 +7,7 @@ collections:
   subprojects:
     output: true
     permalink: /_subprojects/:path/
-    
+
 defaults:
   -
     scope:
@@ -18,12 +18,12 @@ defaults:
     scope:
       path: "projects"
     values:
-      layout:"projecthome"
+      layout: "project"
   -
     scope:
       path: "subprojects"
     values:
-      layout:"project"
+      layout: "subproject"
 prose:
   media: "files"
   siteurl: "http://letsbuildrockets.org"
