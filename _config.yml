@@ -18,9 +18,9 @@ defaults:
     scope:
       type: "projects"
     values:
-      layout: "Project"
+      layout: "project"
   -
     scope:
       type: "subprojects"
     values:
-      layout: "SubProject"
+      layout: "subproject"
