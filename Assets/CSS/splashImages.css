@@ -1,3 +1,9 @@
+@media only screen and (max-device-width: 1024px) {
+    .hero {
+        background-attachment: scroll;
+    }
+}
+
 .hero {
     background-image: url(/Assets/ImportantImages/eric-hero.jpg);
     background-size: cover;
