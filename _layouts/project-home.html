@@ -14,7 +14,7 @@
 {% if site.projects.size > 0 %}
  <ul id="project-container">
 	 {% for project in site.projects %}
-        <li class="project">
+        <li style="background-image:url(/Assets/ProjPics/{{project.project}}.jpg") class="project">
           <a class="projectTitle" href="{{ project.url }}">{{ project.title }}</a>
         </li>
       {% endfor %}
