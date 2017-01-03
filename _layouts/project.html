@@ -2,11 +2,11 @@
 <html>
 <head> {%include head.html %}
   <link rel="stylesheet" type="text/css" href="{{ site.url }}/Assets/CSS/Project.css" />
-  <link rel="stylesheet" type="text/css" href="{{ site.url }}/Assets/CSS/splashImages   .css" />
+  <link rel="stylesheet" type="text/css" href="{{ site.url }}/Assets/CSS/splashImages.css" />
 </head>
 <body>
 	{%include navigation.html %}
-  <div class ="projectImgSplash">
+  <div class ="projectImgSplash" style="background-image:url(/Assets/ProjPics/{{page.project}}.jpg")>
 	</div>
 <div class="content">
 	{{content}}
