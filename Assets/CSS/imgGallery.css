@@ -1,0 +1,50 @@
+.my-gallery {
+  width: 100%;
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: center;
+  position:center;
+  padding-top:5vh;
+  padding-bottom:5vh;
+}
+
+.my-gallery img {
+  width: 20vw;
+  height: 20vh;
+}
+
+.my-gallery figure {
+  display: block;
+  width:250px;
+  margin: 0 5px 5px 0;
+  overflow:hidden;
+  display:flex;
+  flex-flow: row wrap;
+  opacity:0.8;
+  height:auto;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.my-gallery figure:hover {
+  opacity:1;
+}
+
+.my-gallery figure a {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.my-gallery figure a:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+
+}
+
+.my-gallery figcaption {
+  display: none;
+}
