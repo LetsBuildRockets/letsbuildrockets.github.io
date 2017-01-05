@@ -23,6 +23,12 @@ a:hover{
     text-decoration: none;
     color: #F9423A;
 }
+
+/*idk where to put this*/
+.sponsor-img {
+  float: left;
+}
+
 /**Header `**/
 h1 {
     font-family: "Roboto Slab";
@@ -261,7 +267,6 @@ padding-top: 30px;
 .orangeSectionWrapper {
       background-color: #F9423A;
       color: #FFF;
-      height: 500px;
       width: auto;
   }
 /*Footer**/
