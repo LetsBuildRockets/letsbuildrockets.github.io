@@ -4,13 +4,16 @@
   <link rel="stylesheet" type="text/css" href="{{ site.url }}/Assets/CSS/Project.css" />
 </head>
 <body>
-	{%include navigation.html %}
-
-<div class="content">
-  <p>this is a subproject.  Image gallery should go here.</p>
-	{{content}}
-</div>
-	{%include footer.html%}
+  {%include navigation.html %}
+  <div class="content">
+    <div class="whiteSectionWrapper">
+      <h1>{{page.title}}</h1>
+      <h3>Subproject of the <a href="{{site.url}}/projects/{{page.project}}">{{page.project}}</a> project.</h3>
+    </div>
+    {{content}}
+      <p>Back to <a href="{{site.url}}/projects/{{page.project}}">{{page.project}}</a> &bull; Back to <a href="{{site.url}}/project-home.html">Project Home</a></p>
+  </div>
+  {%include footer.html%}
 </body>
 
 </html>

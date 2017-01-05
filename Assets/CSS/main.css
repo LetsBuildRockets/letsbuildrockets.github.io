@@ -22,6 +22,12 @@ a:hover{
   text-decoration: none;
   color: #F9423A;
 }
+
+/*idk where to put this*/
+.sponsor-img {
+  float: left;
+}
+
 /**Header `**/
 h1 {
   font-family: "Roboto Slab";
@@ -258,11 +264,10 @@ ul.Checklist li.checked:before{
 
 /*Orange Section Wrapper**/
 .orangeSectionWrapper {
-  background-color: #F9423A;
-  color: #FFF;
-  height: 500px;
-  width: auto;
-}
+      background-color: #F9423A;
+      color: #FFF;
+      width: auto;
+  }
 /*Footer**/
 .footer {
   background: rgba(0, 0, 0, 0.6);
