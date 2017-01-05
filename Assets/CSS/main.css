@@ -119,8 +119,10 @@ ul.Checklist li.checked:before{
   justify-content: space-around;
   flex-wrap: wrap;
   width: 700px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
+
+/* Buttons */
 
 .whiteButton, .orangeButton {
   margin-top: 10px;
