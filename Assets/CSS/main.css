@@ -143,29 +143,44 @@ ul.Checklist li.checked:before{
 }
 
 /**White Button**/
-.whiteButton, .whiteButton a {
-    background-color: #FFF;
-    color: #F9423A;
+.whiteButton {
+  color: #F9423A;
+  background-color: #FFF;
 }
 
 .whiteButton:hover {
   background-color: #F9423A;
+  color: #FFF;
 }
 
-.whiteButton a:hover {
+.whiteButton a {
+  color: #F9423A;
+
+}
+.whiteButton:hover a {
   color: #FFF;
 }
 
 /*Orange Button**/
-.orangeButton, .orangeButton a {
-    background-color: #F9423A;
-    color: #FFF;
+.orangeButton {
+  color: #FFF;
+  background-color: #F9423A;
 }
 
-.orangeButton:hover, .orangeButton a:hover {
-    background-color: #FFF;
-    color: #F9423A;
+
+.orangeButton:hover {
+  background-color: #FFF;
+  color: #F9423A;
 }
+
+.orangeButton a {
+  color: #FFF;
+
+}
+.orangeButton:hover a {
+  color: #F9423A;
+}
+
 
 /*Email Header**/
 .email h3{
