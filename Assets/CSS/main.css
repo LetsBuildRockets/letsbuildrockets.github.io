@@ -19,18 +19,17 @@ a {
 }
 
 a:hover{
-    transition:0.2s;
-    text-decoration: none;
-    color: #F9423A;
+  text-decoration: none;
+  color: #F9423A;
 }
 /**Header `**/
 h1 {
-    font-family: "Roboto Slab";
-    font-size: 48px;
-    color: #F9423A;
-    font-weight: 700;
-    text-align: center;
-    margin: 0 auto;
+  font-family: "Roboto Slab";
+  font-size: 48px;
+  color: #F9423A;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
 }
 
 h1 a {
@@ -40,38 +39,38 @@ h1 a {
 
 /*Header 2**/
 h2 {
-    font-family: "Roboto Slab";
-    font-size: 48px;
-    color: #FFF;
-    font-weight: 700;
-    text-align: center;
-    margin: 0 auto;
+  font-family: "Roboto Slab";
+  font-size: 48px;
+  color: #FFF;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
 }
 
 /*Header 3**/
 h3 {
-    font-family: "Roboto Slab";
-    font-size:36px;
-    color: #F9423A;
-    font-weight: 700;
-    text-align: center;
+  font-family: "Roboto Slab";
+  font-size:36px;
+  color: #F9423A;
+  font-weight: 700;
+  text-align: center;
 }
 
 
 /*Header 4**/
 h4 {
-    font-family: "Roboto Slab";
-    color: #474747;
-    font-size: 30px;
-    font-weight: 400;
+  font-family: "Roboto Slab";
+  color: #474747;
+  font-size: 30px;
+  font-weight: 400;
 }
 
 /*Paragraph**/
 p {
-    font-family: "Roboto Slab";
-    color: #474747;
-    font-size: 24px;
-    text-align: center;
+  font-family: "Roboto Slab";
+  color: #474747;
+  font-size: 24px;
+  text-align: center;
 }
 
 .orangeSectionWrapper p{
@@ -84,10 +83,10 @@ p {
 
 /**List Item*/
 li {
-    font-family: "Roboto Slab";
-    color: #474747;
-    font-size: 18px;
-    text-align: left;
+  font-family: "Roboto Slab";
+  color: #474747;
+  font-size: 18px;
+  text-align: left;
 }
 
 /**Bulleted checklist*/
@@ -104,89 +103,89 @@ ul.Checklist li.checked:before{
 
 /*Section Wrappers**/
 .whiteSectionWrapper, .orangeSectionWrapper {
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 30px;
-    padding-bottom: 40px;
-    }
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
 
 /*ImgSectionBoxes**/
 .imgSectionBox{
-display: flex;
-justify-content: space-around;
-flex-wrap: wrap;
-width: 700px;
-text-align: center;
-margin: 0 auto;
-padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 700px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 30px;
 }
 
 /**White Button**/
 .whiteButton {
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 170px;
-    border-radius: 50px;
-    border-style: solid;
-    color: #F9423A;
-    text-align: center;
-    font-family: "Roboto Slab";
-    transition: .2s;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 170px;
+  border-radius: 50px;
+  border-style: solid;
+  color: #F9423A;
+  text-align: center;
+  font-family: "Roboto Slab";
+  transition: .2s;
 }
 
 .whiteButton a {
-    text-decoration: none;
-    color: #F9423A;
-    font-size: 24px;
-    transition: .2s;
-    width: 170px;
+  text-decoration: none;
+  color: #F9423A;
+  font-size: 24px;
+  transition: .2s;
+  width: 170px;
 }
 
 .whiteButton:hover {
-    background-color: #F9423A;
+  background-color: #F9423A;
 }
 
 .whiteButton a:hover {
-    color: #FFF;
+  color: #FFF;
 }
 
 /*Orange Button**/
 .orangeButton {
-    margin-top: -70px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 170px;
-    border-radius: 50px;
-    border-style: solid;
-    color: #FFF;
-    text-align: center;
-    font-family: "Roboto Slab";
-    transition: .2s;
+  margin-top: -70px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 170px;
+  border-radius: 50px;
+  border-style: solid;
+  color: #FFF;
+  text-align: center;
+  font-family: "Roboto Slab";
+  transition: .2s;
 }
 
 .orangeButton a {
-    text-decoration: none;
-    color: #FFF;
-    font-size: 24px;
-    transition: .2s;
-    width: 170px;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 24px;
+  transition: .2s;
+  width: 170px;
 }
 
 .orangeButton:hover {
-    background-color: #FFF;
+  background-color: #FFF;
 }
 
 .orangeButton a:hover {
-    color: #F9423A;
+  color: #F9423A;
 }
 /*Email Header**/
 .email h3{
-    font-size: 20px;
-    color: #F9423A;
-    font-weight: 700;
-    text-align: center;
-    margin: 0 auto;
+  font-size: 20px;
+  color: #F9423A;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .email h3 a {
@@ -259,11 +258,11 @@ padding-top: 30px;
 
 /*Orange Section Wrapper**/
 .orangeSectionWrapper {
-      background-color: #F9423A;
-      color: #FFF;
-      height: 500px;
-      width: auto;
-  }
+  background-color: #F9423A;
+  color: #FFF;
+  height: 500px;
+  width: auto;
+}
 /*Footer**/
 .footer {
   background: rgba(0, 0, 0, 0.6);
@@ -274,29 +273,59 @@ padding-top: 30px;
 }
 
 /*Footer Social Media Links**/
-.social-media {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    width: 200px;
-    padding: 10px;
+#SocialMedia {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin:0;
+  padding:0;
+
 }
 
-.social-media img {
-    filter: drop-shadow(0px 0px 2px #202020);
-    -webkit-filter: drop-shadow(0px 0px 2px #202020);
-    -o-transition:all .5s linear;
- -ms-transition:all .5s linear;
- -moz-transition:all .5s linear;
- -webkit-transition:all .5s linear;
+#SocialMedia li {
+  margin-right: 7px;
+  margin-left: 7px;
+  margin-top: 7px;
+  padding: 0;
+  list-style: none;
+  top: 0;
+
+}
+#SocialMedia li, #SocialMedia a {
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style:none;
+  height:50px;
+  width:50px;
 }
 
-.social-media img:hover, img:focus {
-    filter: drop-shadow(0px 0px 2px #F9423A);
-    -webkit-filter: drop-shadow(0px 0px 2px #F9423A);
-    -o-transition:all .5s linear;
- -ms-transition:all .5s linear;
- -moz-transition:all .5s linear;
- -webkit-transition:all .5s linear;
+#Facebook {
+  left: 0px;
+  width:50px;
+  background: url('/Assets/ImportantImages/navSprites.png') 0 0;
+}
+
+#Facebook a:hover {
+  background: url('/Assets/ImportantImages/navSprites.png') 0 -50px;
+}
+
+#Youtube {
+  left: 100px;
+  width: 50px;
+  background: url('/Assets/ImportantImages/navSprites.png') -50px 0;
+}
+
+#Youtube a:hover {
+  background: url('/Assets/ImportantImages/navSprites.png') -50px -50px;
+}
+
+#Github {
+  left: 150px;
+  width:50px;
+  background: url('/Assets/ImportantImages/navSprites.png') -100px 0;
+}
+
+#Github a:hover {
+  background: url('/Assets/ImportantImages/navSprites.png') -100px -50px;
 }
