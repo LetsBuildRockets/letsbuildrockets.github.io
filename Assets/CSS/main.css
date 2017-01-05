@@ -19,9 +19,8 @@ a {
 }
 
 a:hover{
-    transition:0.2s;
-    text-decoration: none;
-    color: #F9423A;
+  text-decoration: none;
+  color: #F9423A;
 }
 
 /*idk where to put this*/
@@ -31,12 +30,12 @@ a:hover{
 
 /**Header `**/
 h1 {
-    font-family: "Roboto Slab";
-    font-size: 48px;
-    color: #F9423A;
-    font-weight: 700;
-    text-align: center;
-    margin: 0 auto;
+  font-family: "Roboto Slab";
+  font-size: 48px;
+  color: #F9423A;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
 }
 
 h1 a {
@@ -46,38 +45,38 @@ h1 a {
 
 /*Header 2**/
 h2 {
-    font-family: "Roboto Slab";
-    font-size: 48px;
-    color: #FFF;
-    font-weight: 700;
-    text-align: center;
-    margin: 0 auto;
+  font-family: "Roboto Slab";
+  font-size: 48px;
+  color: #FFF;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
 }
 
 /*Header 3**/
 h3 {
-    font-family: "Roboto Slab";
-    font-size:36px;
-    color: #F9423A;
-    font-weight: 700;
-    text-align: center;
+  font-family: "Roboto Slab";
+  font-size:36px;
+  color: #F9423A;
+  font-weight: 700;
+  text-align: center;
 }
 
 
 /*Header 4**/
 h4 {
-    font-family: "Roboto Slab";
-    color: #474747;
-    font-size: 30px;
-    font-weight: 400;
+  font-family: "Roboto Slab";
+  color: #474747;
+  font-size: 30px;
+  font-weight: 400;
 }
 
 /*Paragraph**/
 p {
-    font-family: "Roboto Slab";
-    color: #474747;
-    font-size: 24px;
-    text-align: center;
+  font-family: "Roboto Slab";
+  color: #474747;
+  font-size: 24px;
+  text-align: center;
 }
 
 .orangeSectionWrapper p{
@@ -90,10 +89,10 @@ p {
 
 /**List Item*/
 li {
-    font-family: "Roboto Slab";
-    color: #474747;
-    font-size: 18px;
-    text-align: left;
+  font-family: "Roboto Slab";
+  color: #474747;
+  font-size: 18px;
+  text-align: left;
 }
 
 /**Bulleted checklist*/
@@ -150,11 +149,11 @@ ul.Checklist li.checked:before{
 }
 
 .whiteButton:hover {
-    background-color: #F9423A;
+  background-color: #F9423A;
 }
 
 .whiteButton a:hover {
-    color: #FFF;
+  color: #FFF;
 }
 
 /*Orange Button**/
@@ -170,11 +169,11 @@ ul.Checklist li.checked:before{
 
 /*Email Header**/
 .email h3{
-    font-size: 20px;
-    color: #F9423A;
-    font-weight: 700;
-    text-align: center;
-    margin: 0 auto;
+  font-size: 20px;
+  color: #F9423A;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .email h3 a {
@@ -261,29 +260,59 @@ ul.Checklist li.checked:before{
 }
 
 /*Footer Social Media Links**/
-.social-media {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    width: 200px;
-    padding: 10px;
+#SocialMedia {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin:0;
+  padding:0;
+
 }
 
-.social-media img {
-    filter: drop-shadow(0px 0px 2px #202020);
-    -webkit-filter: drop-shadow(0px 0px 2px #202020);
-    -o-transition:all .5s linear;
- -ms-transition:all .5s linear;
- -moz-transition:all .5s linear;
- -webkit-transition:all .5s linear;
+#SocialMedia li {
+  margin-right: 7px;
+  margin-left: 7px;
+  margin-top: 7px;
+  padding: 0;
+  list-style: none;
+  top: 0;
+
+}
+#SocialMedia li, #SocialMedia a {
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style:none;
+  height:50px;
+  width:50px;
 }
 
-.social-media img:hover, img:focus {
-    filter: drop-shadow(0px 0px 2px #F9423A);
-    -webkit-filter: drop-shadow(0px 0px 2px #F9423A);
-    -o-transition:all .5s linear;
- -ms-transition:all .5s linear;
- -moz-transition:all .5s linear;
- -webkit-transition:all .5s linear;
+#Facebook {
+  left: 0px;
+  width:50px;
+  background: url('/Assets/ImportantImages/navSprites.png') 0 0;
+}
+
+#Facebook a:hover {
+  background: url('/Assets/ImportantImages/navSprites.png') 0 -50px;
+}
+
+#Youtube {
+  left: 100px;
+  width: 50px;
+  background: url('/Assets/ImportantImages/navSprites.png') -50px 0;
+}
+
+#Youtube a:hover {
+  background: url('/Assets/ImportantImages/navSprites.png') -50px -50px;
+}
+
+#Github {
+  left: 150px;
+  width:50px;
+  background: url('/Assets/ImportantImages/navSprites.png') -100px 0;
+}
+
+#Github a:hover {
+  background: url('/Assets/ImportantImages/navSprites.png') -100px -50px;
 }
