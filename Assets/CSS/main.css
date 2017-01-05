@@ -110,43 +110,43 @@ ul.Checklist li.checked:before{
 
 /*Section Wrappers**/
 .whiteSectionWrapper, .orangeSectionWrapper {
-    margin-left: auto;
-    margin-right: auto;
     padding-top: 30px;
     padding-bottom: 40px;
-    }
+}
 
 /*ImgSectionBoxes**/
 .imgSectionBox{
-display: flex;
-justify-content: space-around;
-flex-wrap: wrap;
-width: 700px;
-text-align: center;
-margin: 0 auto;
-padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.whiteButton, .orangeButton {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 170px;
+  border-radius: 50px;
+  border-style: solid;
+  text-align: center;
+  font-family: "Roboto Slab";
+  transition: .2s;
+}
+
+.whiteButton a, .orangeButton a {
+  text-decoration: none;
+  font-size: 24px;
+  transition: .2s;
+  width: 100%;
+
 }
 
 /**White Button**/
-.whiteButton {
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 170px;
-    border-radius: 50px;
-    border-style: solid;
+.whiteButton, .whiteButton a {
+    background-color: #FFF;
     color: #F9423A;
-    text-align: center;
-    font-family: "Roboto Slab";
-    transition: .2s;
-}
-
-.whiteButton a {
-    text-decoration: none;
-    color: #F9423A;
-    font-size: 24px;
-    transition: .2s;
-    width: 170px;
 }
 
 .whiteButton:hover {
@@ -158,34 +158,16 @@ padding-top: 30px;
 }
 
 /*Orange Button**/
-.orangeButton {
-    margin-top: -70px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 170px;
-    border-radius: 50px;
-    border-style: solid;
+.orangeButton, .orangeButton a {
+    background-color: #F9423A;
     color: #FFF;
-    text-align: center;
-    font-family: "Roboto Slab";
-    transition: .2s;
 }
 
-.orangeButton a {
-    text-decoration: none;
-    color: #FFF;
-    font-size: 24px;
-    transition: .2s;
-    width: 170px;
-}
-
-.orangeButton:hover {
+.orangeButton:hover, .orangeButton a:hover {
     background-color: #FFF;
-}
-
-.orangeButton a:hover {
     color: #F9423A;
 }
+
 /*Email Header**/
 .email h3{
     font-size: 20px;
