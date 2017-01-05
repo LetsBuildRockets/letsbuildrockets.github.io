@@ -23,9 +23,30 @@ a:hover{
   color: #F9423A;
 }
 
+.SponsorPage p {
+text-align:left;
+
+}
 /*idk where to put this*/
 .sponsor-img {
-  float: left;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  opacity:0.6;
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+.sponsor-img:hover {
+opacity:1;
+-webkit-transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+        transition: all 0.5s ease;
 }
 
 /**Header `**/
