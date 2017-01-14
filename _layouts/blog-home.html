@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% include head.html %}
+  <link rel="stylesheet" type="text/css" href="{{ site.url }}/Assets/CSS/Blog.css" />
+</head>
+<body>
+  {%include navigation.html %}
+  <div class="content">
+    <div class="page-width">
+      {{content}}
+
+      {% for post in paginator.posts %}
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <h4>&bull; <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b. %d, %Y' }}</time> &bull;</h4>
+      {%include post-summary.html %}
+      {% endfor %}
+
+
+    <!-- Pagination links -->
+    <div class="pagination">
+      {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+      {% else %}
+      <span class="previous">Previous</span>
+      {% endif %}
+      <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+      {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+      {% else %}
+      <span class="next ">Next</span>
+      {% endif %}
+    </div>
+  </div>
+</div>
+  {%include footer.html%}
+</body>
+
+</html>

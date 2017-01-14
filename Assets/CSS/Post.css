@@ -1,0 +1,36 @@
+body {
+    font-size: 20px;
+    color: #333;
+    text-rendering: optimizeLegibility;
+    height:100%;
+}
+
+p {
+  display:block;
+  text-align:justify;
+
+}
+
+h4 {
+  margin-top:-30px;
+  font-style:italic;
+  text-align:center;
+  font-size:22px;
+  color:#afaeae;
+}
+
+h5 {
+  font-size:26px;
+  margin:auto;
+  color:#333;
+}
+
+.writer {
+display:flex;
+align-items:center;
+}
+
+.writer p {
+  text-align: left;
+
+}

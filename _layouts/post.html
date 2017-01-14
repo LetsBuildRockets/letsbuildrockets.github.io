@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% include head.html %}
+  <link rel="stylesheet" type="text/css" href="{{ site.url }}/Assets/CSS/Post.css" />
+  <link rel="stylesheet" type="text/css" href="{{site.url}}/Assets/CSS/Rocketeer.css" />
+</head>
+<body>
+  	{%include navigation.html %}
+  <div class="content">
+     <h3>{{ page.title }}</h3>
+       <h4>&bull; <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%b. %d, %Y' }}</time> &bull;</h4>
+      {{ content }}
+  </div>
+  {%include footer.html %}
+
+
+</body>
+</html>

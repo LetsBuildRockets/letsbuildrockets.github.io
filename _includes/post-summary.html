@@ -1,0 +1,11 @@
+<style>
+.post-summary {
+  list-style-type: none;
+}
+</style>
+<li class="post-summary">
+  {{ post.excerpt | markdownify }}
+  {% if post.content contains site.excerpt_separator %}
+    <a href="{{ post.url | prepend: site.baseurl }}">...Read more</a>
+  {% endif %}
+</li>
