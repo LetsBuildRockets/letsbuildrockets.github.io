@@ -5,6 +5,7 @@ html, body {
 
 .content{
   padding-top:11vh;
+  flex:1;
 }
 
 .page-width {
@@ -293,8 +294,11 @@ ul.Checklist li.checked:before{
 .footer {
   background: rgba(0, 0, 0, 0.6);
   width: 100%;
+  left: 0;
+bottom: 0;
   height: 100px;
   padding-top: 20px;
+  margin-top:102px;
   text-shadow: #202020 0px 0px 2px;
 }
 

@@ -10,11 +10,12 @@
   <div class="content">
     <div class="page-width">
       {{content}}
-
       {% for post in paginator.posts %}
+      <div class = "post-container">
       <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
       <h4>&bull; <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b. %d, %Y' }}</time> &bull;</h4>
       {%include post-summary.html %}
+      </div>
       {% endfor %}
 
 

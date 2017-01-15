@@ -1,6 +1,12 @@
+.page-width {
+  width: 800px;
+  margin: 0 auto;
+}
+
 a {
   transition:0.2s;
 }
+
 .pagination {
   font-family:"Roboto Slab";
   margin:10px;
@@ -11,19 +17,20 @@ a {
 
 h3 {
   padding:0;
-  margin-bottom:-30px;
+  margin-bottom:-25px;
+  font-size:20px;
 }
 
 h4 {
   font-style:italic;
   text-align:center;
-  font-size:22px;
-  color:#afaeae;
+  font-size:18px;
+  color:#F9423A;
 }
 
 p {
   text-align:justify;
-  font-size:20px;
+  font-size:16px;
 }
 
 .previous {
@@ -34,4 +41,9 @@ p {
 .next {
   margin-left:15px;
   margin-right:15px;
+}
+
+.post-container {
+   border-bottom:dotted #F9423A 2px;
+   margin-bottom:auto;
 }
