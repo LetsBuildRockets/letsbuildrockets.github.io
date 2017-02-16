@@ -9,7 +9,7 @@ html, body {
 }
 
 .page-width {
-  width: 1000px;
+  width: 75vw;
   margin: 0 auto;
 }
 
@@ -141,7 +141,7 @@ ul.Checklist li.checked:before{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 700px;
+  width: 50vw;
   margin: 20px auto;
 }
 
@@ -253,9 +253,8 @@ ul.Checklist li.checked:before{
   color: #afaeae;
   font-family: "Roboto Slab";
   display: block;
-  padding-left: 10px;
-  padding-right: 25px;
-  margin-right:15px;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
   transition: .2s;
   font-size:1.2em;
 }
@@ -273,10 +272,18 @@ ul.Checklist li.checked:before{
   display: flex;
 }
 
+/* Please implement a mobile drop down navigation here */
+@media screen and (max-width: 810px) {
+
+  .links {
+    display: none;
+  }
+}
+
 /*Logo**/
 .logo {
   background-image: url(/Assets/ImportantImages/logo.png);
-  width: 12vw;
+  width: 20vh;
   height: 10vh;
   background-size:90%;
   margin-left: 2%;
