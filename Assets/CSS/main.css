@@ -1,6 +1,9 @@
 html, body {
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 .content{
@@ -302,10 +305,9 @@ ul.Checklist li.checked:before{
   background: rgba(0, 0, 0, 0.6);
   width: 100%;
   left: 0;
-bottom: 0;
+  bottom: 0;
   height: 100px;
   padding-top: 20px;
-  margin-top:102px;
   text-shadow: #202020 0px 0px 2px;
 }
 
