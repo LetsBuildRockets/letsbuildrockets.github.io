@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+  padding: 0;
 }
 
 li.project {
@@ -10,7 +11,7 @@ li.project {
   overflow: hidden;
   margin: 1rem;
   width: 100%;
-  height:15vw;
+  height: 25vh;
   min-width: 100px;
   min-height: 100px;
   text-align: center;

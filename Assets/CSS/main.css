@@ -28,6 +28,12 @@ a:hover{
   color: #F9423A;
 }
 
+img {
+  display: block;
+  max-width: 75vw;
+  margin: auto;
+}
+
 .SponsorPage p {
 text-align:left;
 
