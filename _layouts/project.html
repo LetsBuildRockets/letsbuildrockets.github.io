@@ -14,20 +14,7 @@
 
   {{content}}
 
-  {% if site.subprojects.size != 0 %}
-  <h3>Subprojects</h3>
-  <ul id="subProjectContainer">
-    {% for subproject in site.subprojects %}
-    {%if page.project == subproject.project%}
-    <li class="subProject">
-      <a class="subProjectTitle" href="{{ subproject.url }}">{{ subproject.title }}</a>
-    </li>
-    {%endif%}
-    {%endfor%}
-  </ul>
-  {% endif %}
-
-      <p>Back to <a href="{{site.url}}/project-home.html">Project Home</a></p>
+  <p>Back to <a href="{{site.url}}/project-home.html">Project Home</a></p>
   {%include footer.html%}
 </body>
 
