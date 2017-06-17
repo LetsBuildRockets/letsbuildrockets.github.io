@@ -247,13 +247,13 @@ ul.Checklist li.checked:before{
 }
 
 .nav-bar {
-  width: 100%;
+  width: 90%;
   height: 10vh;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position:fixed;
+  position: relative;
 
 }
 
