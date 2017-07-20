@@ -1,15 +1,62 @@
 ---
-layout: store
 title: Store
 ---
-<link rel="stylesheet" href="/Assets/CSS/Rocketeer.css">
+<link rel="stylesheet" type="text/css" href="/Assets/CSS/store.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="http://sdks.shopifycdn.com/js-buy-sdk/v0/latest/shopify-buy.umd.polyfilled.min.js"></script>
+<script type="text/javascript">
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'embeds.myshopify.com',
+      apiKey: '952162710f94aa7b7644b14b2a94f4a3',
+      appId: '6',
+    });
+    {% for product in site.products %}
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [{{product.pid}}],
+        node: document.getElementById('product-{{product.pid}}'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+          "product": {
+            "styles": {
+              "button": {
+                "background-color": "#666666",
+                ":hover": {"background-color": "#F9423A"},
+                ":focus": {"background-color": "#F9423A"},
+              },
+            }
+          }
+        },
+        "url_slug":'{{product.url}}',
+      });
+    });
+    {% endfor %}
+  }
+(function () {
+  var scriptURL = '/Assets/JS/buy-button-storefront.js';
+  window.ShopifyBuy && window.ShopifyBuy.UI ? ShopifyBuyInit() : loadScript();
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+})();
+</script>
 <div class="page-width">
-<h1>Hey there!</h1>
-<p>Our mission is to promote science and technology education through amateur rocketry and robotic endeavors.</p>
-<div class="leftAlign">
-  <h3>About Us</h3>
-  <p>We are a small group of students that started working on a liquid fueled rocket in 2013. We began with small solid fuel engines and have been working our way towards our short term goal. Since the begining of this project we realized that there is a need for the kind of work we are doing as young scientists and engineers. We started our nonprofit to bring our work into the world and help encourage students to learn and start their own projects.</p>
-  <h3>Short Term Goal</h3>
-  <p>To launch an open source liquid fueled rocket to an altitude of 5km.</p>
-</div>
+<h1>Let's Build Rockets Store</h1>
+<p>Pelase consider purcahsing a t-shirt or kit to help suppport our mission.</p>
+
+{% if site.products.size > 0 %}
+  <ul id="products-container">
+    {% for product in site.products %}
+      <li class="product">
+        <div id="product-{{product.pid}}"></div>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
 </div>
