@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head> {%include head.html %}
+	<link rel="stylesheet" type="text/css" href="/Assets/CSS/splashImages.css" />
+	<link rel="stylesheet" type="text/css" href="/Assets/CSS/Project.css" />
+	<link rel="stylesheet" type="text/css" href="/Assets/CSS/store.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="http://sdks.shopifycdn.com/js-buy-sdk/v0/latest/shopify-buy.umd.polyfilled.min.js"></script>
+	<script type="text/javascript">
+	  function ShopifyBuyInit() {
+	    var client = ShopifyBuy.buildClient({
+	      domain: 'embeds.myshopify.com',
+	      apiKey: '952162710f94aa7b7644b14b2a94f4a3',
+	      appId: '6',
+	    });
+		 	{% for product in site.products %}
+ 			ShopifyBuy.UI.onReady(client).then(function (ui) {
+ 				ui.createComponent('product', {
+ 					id: [{{product.pid}}],
+ 					node: document.getElementById('product-{{product.pid}}'),
+ 					moneyFormat: '%24%7B%7Bamount%7D%7D',
+ 					options: {
+ 						"product": {
+ 							"styles": {
+ 								"button": {
+ 									"background-color": "#292929",
+ 									":hover": {"background-color": "#464646"},
+ 									":focus": {"background-color": "#464646"}
+ 								},
+ 							}
+ 						}
+ 					}
+ 				});
+ 			});
+			{% endfor %}
+		}
+	(function () {
+	  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+	  window.ShopifyBuy && window.ShopifyBuy.UI ? ShopifyBuyInit() : loadScript();
+
+	  function loadScript() {
+	    var script = document.createElement('script');
+	    script.async = true;
+	    script.src = scriptURL;
+	    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+	    script.onload = ShopifyBuyInit;
+	  }
+	})();
+	</script>
+
+</head>
+<body>
+	{%include navigation.html %}
+
+<div class="content">
+	{{content}}
+</div>
+
+
+{% if site.products.size > 0 %}
+ <ul id="products-container">
+	 {% for product in site.products %}
+        <li>
+					<div class="product" id="product-{{product.pid}}"></div>
+        </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+ 	{%include footer.html%}
+</body>
+
+</html>

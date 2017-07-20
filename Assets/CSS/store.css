@@ -1,0 +1,19 @@
+.product {
+  max-width: 400px;
+  box-shadow: 0 0 15px 5px #eee;
+  padding: 30px;
+}
+
+.product__buy {
+  background: #7ab55c;
+  padding: 0.5625em 1.875em;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.product__buy:hover {
+  text-decoration: none;
+  background: #6aa74c;
+}
