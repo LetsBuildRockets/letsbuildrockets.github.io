@@ -8,12 +8,23 @@
   padding-bottom:5vh;
 }
 
+.product-details {
+    justify-content: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: top;
+  padding: 20px 0 0 20px;
+}
+.product-details .details {
+  min-width: 320px;
+  -webkit-flex: 1;
+  flex: 1;
+}
+
 .product {
   display: block;
-  width:250px;
+  min-width:200px;
   margin: 0 100px 100px 0;
-  overflow:hidden;
-  display:flex;
-  flex-flow: row wrap;
-  height:auto;
 }

@@ -49,14 +49,18 @@
 </head>
 <body>
 	{%include navigation.html %}
-
   <div class="content">
-    <ul id="products-container">
-      <li class="product">
+		<h3>{{page.title}}</h3>
+		<div class="page-width">
+    <div class="product-details">
+      <div class="product">
         <div id="product-{{page.pid}}"></div>
-      </li>
-    </ul>
-    {{content}}
+      </div>
+	    <div class="details leftAlign">
+	    	{{content}}
+			</div>
+    </div>
+	</div>
   </div>
 
  	{%include footer.html%}
