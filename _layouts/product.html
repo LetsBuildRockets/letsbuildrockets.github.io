@@ -20,12 +20,38 @@
  					moneyFormat: '%24%7B%7Bamount%7D%7D',
  					options: {
  						"product": {
+							"layout": "horizontal",
+					    "variantId": "all",
+					    "width": "100%",
+					    "contents": {
+					      "img": false,
+					      "imgWithCarousel": true,
+					      "variantTitle": false,
+					      "description": true,
+								"button": false,
+					      "buttonWithQuantity": true,
+					      "quantity": false
+					    },
  							"styles": {
+								"product": {
+									"text-align": "left"
+								},
  								"button": {
  									"background-color": "#666666",
+									"font-family": "Roboto Slab",
  									":hover": {"background-color": "#F9423A"},
  									":focus": {"background-color": "#F9423A"},
  								},
+								"description": {
+									"font-size": "24px",
+									"font-family": "Roboto Slab",
+									"color": "#474747"
+								},
+								"title": {
+									"font-size": "30px",
+								 "font-family": "Roboto Slab",
+								 "color": "#F9423A",
+								}
  							}
  						}
  					}
@@ -50,13 +76,10 @@
 <body>
 	{%include navigation.html %}
   <div class="content">
-		<h3>{{page.title}}</h3>
 		<div class="page-width">
     <div class="product-details">
-      <div class="product">
-        <div id="product-{{page.pid}}"></div>
-      </div>
-	    <div class="details leftAlign">
+      <div id="product-{{page.pid}}"></div>
+	    <div class="product-details leftAlign">
 	    	{{content}}
 			</div>
     </div>
