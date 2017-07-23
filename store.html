@@ -51,11 +51,37 @@ title: Store
   }
 })();
 </script>
-<div class="page-width">
+<div class="page-width" id="content">
 <h1>Let's Build Rockets Store</h1>
 <p>Please consider purchasing a T-shirt or kit to help support our mission.</p>
 
+<script type="text/javascript">
+var products = {};
 {% if site.products.size > 0 %}
+    {% for product in site.products %}
+    if(!products["{{product.category}}"]) products["{{product.category}}"] = [];
+    products["{{product.category}}"].push({{product.pid}});
+    {% endfor %}
+    Object.keys(products).forEach(function(k){
+      var catHeader = document.createElement("h3");
+      catHeader.innerHTML = k;
+      var ul = document.createElement("ul");
+      ul.setAttribute("class","products-container");
+      console.log(k + ' - ' + products[k]);
+      products[k].forEach(function(j){
+        var li = document.createElement("li");
+        var div = document.createElement("div");
+        li.setAttribute("class","product");
+        div.setAttribute("id","product-"+j);
+        li.appendChild(div);
+        ul.appendChild(li);
+      });
+      document.getElementById("content").appendChild(catHeader);
+      document.getElementById("content").appendChild(ul);
+    });
+{% endif %}
+
+/*{% if site.products.size > 0 %}
   <ul id="products-container">
     {% for product in site.products %}
       <li class="product">
@@ -63,5 +89,6 @@ title: Store
       </li>
     {% endfor %}
   </ul>
-{% endif %}
+{% endif %}*/
+</script>
 </div>

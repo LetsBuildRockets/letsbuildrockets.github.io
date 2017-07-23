@@ -1,11 +1,14 @@
-#products-container {
+.products-container {
   width: 100%;
   display:flex;
   flex-flow:row wrap;
   justify-content: center;
-  position:center;
   padding-top:5vh;
   padding-bottom:5vh;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+  -webkit-padding-end: 0px;
 }
 
 .product-details {
@@ -15,5 +18,5 @@
 .product {
   display: block;
   min-width:200px;
-  margin: 100px;
+  margin: 0px 100px 100px 100px;
 }
