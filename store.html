@@ -66,7 +66,7 @@ var products = {};
       var catHeader = document.createElement("h3");
       catHeader.innerHTML = k;
       var ul = document.createElement("ul");
-      ul.setAttribute("class","products-container");
+      ul.setAttribute("class","products-container page-width");
       console.log(k + ' - ' + products[k]);
       products[k].forEach(function(j){
         var li = document.createElement("li");
@@ -76,19 +76,11 @@ var products = {};
         li.appendChild(div);
         ul.appendChild(li);
       });
+      document.getElementById("content").appendChild(document.createElement("hr"));
       document.getElementById("content").appendChild(catHeader);
       document.getElementById("content").appendChild(ul);
     });
 {% endif %}
 
-/*{% if site.products.size > 0 %}
-  <ul id="products-container">
-    {% for product in site.products %}
-      <li class="product">
-        <div id="product-{{product.pid}}"></div>
-      </li>
-    {% endfor %}
-  </ul>
-{% endif %}*/
 </script>
 </div>
