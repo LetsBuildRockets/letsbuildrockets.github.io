@@ -14,6 +14,8 @@ li.project {
   height: 25vh;
   min-width: 100px;
   min-height: 100px;
+  max-width:1440px;
+  max-height:530px;
   text-align: center;
   border-radius: 25px;
   transition: .2s;
@@ -44,43 +46,11 @@ transform: scale(1.0125);
 
 .projectTitle:hover{
   color:#fff;
-    background-color:rgba(0, 0, 0, 0.4);
+  font-size:36px;
+  background-color:rgba(0, 0, 0, 0.4);
 }
 
-#subProjectContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-}
-
-li.subProject {
-  list-style-type: none;
-  overflow: hidden;
-  margin: 1rem;
-  width: 16vw;
-  height:15vw;
-  min-width: 100px;
-  min-height: 100px;
-  text-align: center;
-  border-radius: 25px;
-  border-style: solid;
-  color: #F9423A;
-  transition: .2s;
-  padding-top:15px;
-}
-
-li.subProject:hover{
-  background-color: #F9423A;
-}
-
-.subProjectTitle {
-  color: #F9423A;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.subProjectTitle:hover{
-  color:#fff;
+.develStatus{
+  color:#474747;
+  font-size:24px;
 }
