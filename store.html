@@ -67,7 +67,6 @@ var products = {};
       catHeader.innerHTML = k;
       var ul = document.createElement("ul");
       ul.setAttribute("class","products-container page-width");
-      console.log(k + ' - ' + products[k]);
       products[k].forEach(function(j){
         var li = document.createElement("li");
         var div = document.createElement("div");
