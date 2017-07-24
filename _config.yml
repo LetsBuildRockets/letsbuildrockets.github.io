@@ -11,9 +11,6 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
-  subprojects:
-    output: true
-    permalink: /subprojects/:path/
   products:
     output: true
     permalink: /products/:path/
@@ -29,13 +26,3 @@ defaults:
       type: "projects"
     values:
       layout: "project"
-  -
-    scope:
-      type: "subprojects"
-    values:
-      layout: "subproject"
-  -
-    scope:
-      type: "posts"
-    values:
-      layout: "post"
