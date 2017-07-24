@@ -1,0 +1,99 @@
+---
+title: Store
+---
+<link rel="stylesheet" type="text/css" href="/Assets/CSS/store.css" />
+<style>
+.paypalbutton input {
+    vertical-align:  middle;
+    margin: 0px 0px 5px 5px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="http://sdks.shopifycdn.com/js-buy-sdk/v0/latest/shopify-buy.umd.polyfilled.min.js"></script>
+<script type="text/javascript">
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'lets-build-rockets-inc.myshopify.com',
+      apiKey: '2478c4647aeb5704f64412599e004771',
+      appId: '6',
+    });
+    {% for product in site.products %}
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: [{{product.pid}}],
+        node: document.getElementById('product-{{product.pid}}'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+          "product": {
+            "styles": {
+              "button": {
+                "background-color": "#666666",
+                ":hover": {"background-color": "#F9423A"},
+                ":focus": {"background-color": "#F9423A"},
+              },
+              "title": {
+                "font-size": "30px",
+               "font-family": "Roboto Slab",
+               "color": "#F9423A",
+              }
+            }
+          }
+        },
+        "url_slug":'{{product.url}}',
+      });
+    });
+    {% endfor %}
+  }
+(function () {
+  var scriptURL = '/Assets/JS/buy-button-storefront.js';
+  window.ShopifyBuy && window.ShopifyBuy.UI ? ShopifyBuyInit() : loadScript();
+
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+})();
+</script>
+<div class="page-width" id="content">
+<h1>Let's Build Rockets Store</h1>
+<p>If you are interested in supporting our mission, please consider purchasing a T-shirt or kit below.</p>
+<form action="https://www.paypal.com/cgi-bin/webscr" class="paypalbutton" method="post" target="_top">
+  <p style="">You can also donate directly via Paypal:
+    <input type="hidden" name="cmd" value="_s-xclick" />
+    <input type="hidden" name="hosted_button_id" value="PBJCUHZSNG6AN" />
+    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+  </p>
+</form>
+<p>We are a 501(c)(3) Non-Profit, so your donations may be deductible.</p>
+
+<script type="text/javascript">
+var products = {};
+{% if site.products.size > 0 %}
+    {% for product in site.products %}
+    if(!products["{{product.category}}"]) products["{{product.category}}"] = [];
+    products["{{product.category}}"].push({{product.pid}});
+    {% endfor %}
+    Object.keys(products).forEach(function(k){
+      var catHeader = document.createElement("h3");
+      catHeader.innerHTML = k;
+      var ul = document.createElement("ul");
+      ul.setAttribute("class","products-container page-width");
+      products[k].forEach(function(j){
+        var li = document.createElement("li");
+        var div = document.createElement("div");
+        li.setAttribute("class","product");
+        div.setAttribute("id","product-"+j);
+        li.appendChild(div);
+        ul.appendChild(li);
+      });
+      document.getElementById("content").appendChild(document.createElement("hr"));
+      document.getElementById("content").appendChild(catHeader);
+      document.getElementById("content").appendChild(ul);
+    });
+{% endif %}
+
+</script>
+</div>
