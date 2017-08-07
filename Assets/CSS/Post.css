@@ -8,6 +8,7 @@ body {
 p {
   display:block;
   text-align:justify;
+  font-size: 20px;
 
 }
 
@@ -23,14 +24,4 @@ h5 {
   font-size:26px;
   margin:auto;
   color:#333;
-}
-
-.writer {
-display:flex;
-align-items:center;
-}
-
-.writer p {
-  text-align: left;
-
 }
