@@ -182,11 +182,13 @@ ul.Checklist li.checked:before{
 .whiteButton {
   color: #F9423A;
   background-color: #FFF;
+  border-color: #F9423A;
 }
 
 .whiteButton:hover {
   background-color: #F9423A;
   color: #FFF;
+  border-color: #F9423A;
 }
 
 .whiteButton a {
@@ -201,12 +203,14 @@ ul.Checklist li.checked:before{
 .orangeButton {
   color: #FFF;
   background-color: #F9423A;
+  border-color: #FFF;
 }
 
 
 .orangeButton:hover {
   background-color: #FFF;
   color: #F9423A;
+  border-color: #FFF;
 }
 
 .orangeButton a {
