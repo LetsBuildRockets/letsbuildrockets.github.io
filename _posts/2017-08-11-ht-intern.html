@@ -1,0 +1,29 @@
+---
+layout: post
+title: "Meet our Interns: Pooja Swami - Horizon Tracker Payload"
+project: Horizon-Tracker
+published: true
+---
+
+<div class="page-width">
+  <p><i>This is one of several blog posts written by the high school interns that have been working with us this summer. Stay tuned for more!</i></p>
+
+  <img src="{{site.url}}/Assets/Rocketeers/rocketeer-pooja.png" width="150" style="float:left; margin: 1vh 1vw;" />
+  <p>Hi, my name is Pooja Swami and my project this summer was to build a horizon tracking system for the liquid fueled rocket project. The horizon tracking system finds the horizon using a camera and returns the angle and orientation at which the rocket is placed. We are planning on launching the system on a solid fueled model rocket at the CATO launch site in Durham, CT.</p>
+  <!--more-->
+
+  <p>In order to track the horizon, we are using two Raspberry Pi Zeros, a magnetometer, and two cameras. The magnetometer acts as a compass and gets the roll of the rocket, while the two cameras are perpendicular to each other to get different axes. One Raspberry Pi is connected to the magnetometer and a camera, while the other is just connected to a camera. </p>
+
+  <p>Using OpenCV in C++, we applied many filters on various images of horizons to isolate the horizon from the rest of the image, and return the angle to us. We wrote functions to find the three longest contours in the filtered image, and draw a line across the longest one, which is (hopefully) the horizon. Calculating the angle of this line relative to the image frame gives us the angle of the horizon relative to the rocket. In the main function, we call all of these functions and store the final angle for each frame the camera captures. </p>
+
+  <p>We initially tested these filters on various images of horizons at 30,000 feet that we found on Google. Tweaking various functions as we went along, we then began to test it on the Raspberry Pi Zero using the camera. We found that the inRange function took too long to process the video, and that it would not be ideal for when we launch the rocket, so we wrote our own variation of the OpenCV function. We ran into similar problems along the way, mostly regarding run speed, but by writing our own function and lowering the resolution of the camera, we were able to speed it up. </p>
+
+  <p>We designed and built a power supply for the Pis. We also needed to design a board for the components of the rocket to sit on whilst in the rocket. We CADded a board with holes in it, and we ended up using four of them, so that we could screw the Raspberry Pis and the camera on it, with the cameras perpendicular to each other and the the two Pis perpendicular to one another. The magnetometer sits in the middle of the four boards and this structure sits inside the payload of the rocket. </p>
+
+  <p>We still need to make some final settings adjustments based on the exposure of the camera, and track down a few software bugs, but we are almost ready for our upcoming launch!
+  </p>
+
+  <p><b><a href="https://github.com/LetsBuildRockets/horizon-tracker">See Pooja's work on GitHub</a></b></p>
+
+</div>
+</div>
