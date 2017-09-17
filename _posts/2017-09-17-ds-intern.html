@@ -1,0 +1,64 @@
+---
+layout: post
+title: "Meet our Interns: Tim Scalzo - Documentation Site Development"
+project: Documentation-Site
+published: true
+---
+
+<div class="page-width">
+  <p><i>This is one of several blog posts written by the high school interns that have been working with us this summer.</i></p>
+
+  <img src="{{site.url}}/Assets/Rocketeers/rocketeer-pooja.png" width="150" style="float:left; margin: 1vh 1vw;" />
+  <p>Hello! My name is Tim Scalzo and my project this summer was to help develop a website to host and share work done by the Let's Build Rockets team. The documentation website will make it possible for other people to access and learn from the work that we've been doing. This will be a dynamic website which is not something that I had a lot of experience in before I began work on the project. But as I worked over the summer I learned a lot about many different things.</p>
+  <!--more-->
+
+  <h5>Planning</h5>
+  <p>The first thing we did was plan out what would be on the site, how it would look, and how it would get there. We decided there would be three basic things displayed on the site: Files, Articles, and Users. Each one would be stored in a database and would have specific data values associated with each one. They would each be a column in the database where each row is a single entity of that table's type. We also did some brainstorming on how the website should look, since we never got around to implementing actual styles or formatting during the summer, I won't get into the details. Putting it simply, we decided it should look similar to Wikipedia. Each article would have a table of contents, an author, content, and files associated with it.</p>
+
+  <h5>Database</h5>
+  <p>
+    * Decided to use Postgres SQL
+    * Eric set that up
+    * SSH to make changes
+    * Learned about knex and stuff
+  </p>
+
+  <h5>Next.js</h5>
+  <p>
+    * Did tutorial and built very basic dynamic site
+    * Duplicated tutorial site and stripped it down to be what we needed
+    * Talk about server that does url masking and stuff
+  </p>
+
+  <h5>GET & POST Requests</h5>
+  <p>
+    * Explain what they are
+    * Functions to access info from database are GET requests
+    * Functions to change info in database are POST requests
+    * Linked API page to specific functions using server and url masking
+  </p>
+
+  <h5>Google API</h5>
+  <p>
+    * Most files are in Google Drive
+    * Knew we could pull data from it and store in our database
+    * Wrote GET request functions based on manually authenticating
+    * Needed server to update automatically
+    * Created service account
+    * Rewrote functions using Google's npm package that auto authenticates using local file
+    * Wrote function to pull all files from folder in Google Drive
+  </p>
+
+  <h5>Browser Editor</h5>
+  <p>
+    * Clunky to ssh into database
+    * Created api pages - go to them with specific info and it does stuff (still pretty clunky)
+    * Started to create editor for browser
+    * Allow creation and editing of Files' description, Articles' content, and Users' usernames
+    * Summer ended here
+  </p>
+
+  <p><b><a href="https://github.com/LetsBuildRockets/documentation-site">See Tim's work on GitHub</a></b></p>
+
+</div>
+</div>
