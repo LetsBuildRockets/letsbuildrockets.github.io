@@ -72,7 +72,8 @@ title: Store
 <script type="text/javascript">
 var products = {};
 {% if site.products.size > 0 %}
-    {% for product in site.products %}
+    {% assign items = site.products | sort: 'order' %}
+    {% for product in items %}
     if(!products["{{product.category}}"]) products["{{product.category}}"] = [];
     products["{{product.category}}"].push({{product.pid}});
     {% endfor %}
