@@ -23,9 +23,14 @@ a {
   transition:0.2s;
 }
 
-a:hover{
+:not(.orangeSectionWrapper) a:hover{
   text-decoration: none;
   color: #F9423A;
+}
+
+.orangeSectionWrapper a:hover{
+  text-decoration: none;
+  color: #fff;
 }
 
 img {

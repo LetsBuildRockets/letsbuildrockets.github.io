@@ -59,15 +59,8 @@ title: Store
 </script>
 <div class="page-width" id="content">
 <h1>Let's Build Rockets Store</h1>
-<p>If you are interested in supporting our mission, please consider purchasing a T-shirt or kit below.</p>
-<form action="https://www.paypal.com/cgi-bin/webscr" class="paypalbutton" method="post" target="_top">
-  <p style="">You can also donate directly via Paypal:
-    <input type="hidden" name="cmd" value="_s-xclick" />
-    <input type="hidden" name="hosted_button_id" value="PBJCUHZSNG6AN" />
-    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
-  </p>
-</form>
-<p>We are a 501(c)(3) Non-Profit, so your donations may be deductible.</p>
+<p>If you are interested in supporting our mission, please see the T-shirts or kits available for purchase below.</p>
+{% include paypal-button.html %}
 
 <script type="text/javascript">
 var products = {};
